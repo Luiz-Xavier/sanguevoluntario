@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/static/css/modelo.css" />
+        <link rel='shortcut icon' type='image/x-icon' href='/static/css/favicon/favicon.ico' />
+        
+        <title>Sangue Voluntario</title>
+    </head>
+<!-- Topo da página -->
+    <header>
+        <menu id="menu">
+            <a href="#" onclick="contrast()"> Contraste</a>
+            <a href="#" onclick="font_mais()"> Fonte ++</a>
+        </menu>
+        
+       
+
+    </header>
+<!-- Corpo da página -->
+    <body id="principal">
+             
+
+        <div class="acessibilidade">
+            <a class="titulo">
+                SEJA BEM VINDO. 
+            </a>
+        <br>
+        <br>
+            <a class="subtitulo">
+                AMIGO DOADOR.
+            </a>
+        <br>  
+        <br>    
+        
+        
+            <a class="acesso">
+                Primeiro Acesso
+            </a>
+            <br>
+            <form action="/Principal"  method="post">
+                <label> Número identificador: </label><br>
+                <input type="number" name="num" id="num" /> 
+                <label> Senha: </label> <br>
+                <input type="password" name="senha" id="senha" /> <br>
+                <button type="submit" onclick="valor()"> Entrar </button>
+            </form>
+        <br>
+            <a class="acesso" href="/cadastro"> Primeiro Acesso </a>    
+        </div>
+    
+        <script src="/script/principal.js"></script>
+
+    </body>
+
+</html>

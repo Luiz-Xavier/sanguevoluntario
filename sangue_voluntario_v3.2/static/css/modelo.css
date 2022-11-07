@@ -1,0 +1,70 @@
+/** Geral **/
+html{
+    background-image: url("/static/css/slide2.png");
+    
+}
+#pause{
+    background-image: url("/static/css/hemocentro.jpg");
+    padding-left: auto;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-se
+    
+}
+
+
+/** Corpo **/
+    a.titulo{
+        padding-left: auto;
+        color: aliceblue;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    
+    }
+    a.subtitulo{
+        padding-left: auto;
+        color: aliceblue;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    a.acesso{
+        padding-left: auto;
+        color: aliceblue;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+    }
+    
+   
+    label{
+        display: inline;
+    }
+    input{
+        display: block;
+    }
+    
+    a{
+        color: yellow;
+    }
+   
+    p{
+        color: white;
+    }
+    #menu{
+        display: inline;
+        border: 1px solid;       
+    }
+    #cadastro{
+        display: inline;
+        
+    }
+    #principal{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        display:block;
+        padding-left: 450px;        
+        
+    }

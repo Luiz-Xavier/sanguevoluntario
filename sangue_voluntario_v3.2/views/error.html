@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/static/css/modelo.css" />
+    <link rel='shortcut icon' type='image/x-icon' href='/static/css/favicon/favicon.ico' />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Erro</title>
+</head>
+<body id="principal">
+    
+<br>
+<br>
+<h1> PÁGINA DE ERRO </h1>
+<br>
+<br>
+<div class="error">
+	<a class="titulo" > Resposta do Servidor:</h1>
+<br>
+<br>
+<%if(typeof error == "undefined"){%>
+	<%}else{%>
+<a class="titulo" ><%= error.message %></a>
+   <%}%>
+
+</div>
+
+<br>
+<br>
+    <h1 id="hora"></h1>
+       <footer><a href="/views/principal.html">Principal</a></footer>
+</body>
+</html>

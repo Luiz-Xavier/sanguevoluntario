@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/static/css/modelo.css">
+        <link rel='shortcut icon' type='image/x-icon' href='/static/css/favicon/favicon.ico' />
+        
+        <title>Primeiro Acesso</title>
+    </head>
+<!-- Topo da página -->
+    <header >
+        <!-- Topo da página -->
+    <header>
+            <menu id="menu">
+                <a href="#" onclick="contrast()"> Contraste</a>
+                <a href="#" onclick="font_mais()"> Fonte ++</a>
+            </menu>
+            
+        
+    </header>
+<!-- Corpo da página -->
+    <body id ="principal">
+        <h1> Primeiro Acesso</h1>
+        <p> Espaço reservado para o cadastro do Doador.</p>
+               
+            <form action="/Cadastro" id=cadastro method="post">
+                 <br>
+                <br>                           
+
+                <!-- Demais INPUTs HTML-->
+                <label>Idade</label>
+                <input type="number" name="idade" id="idade" style="width: 35px;" />
+                <label>Genero</label><br>
+                <select id="genero" name="genero" >
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <label>Senha</label>
+                <input type="text" name="senha" id="senha" style="width: 75px"/>
+                                
+                  <button type="submit" onclick="cadastrar()">Enviar</button>
+            </form>
+        
+     <script src="/script/cadastro.js"></script>
+
+     <br>
+     <br>
+     <a href="/views/home.html"> Meu Histórico</a>
+    </body>
+
+</html>
