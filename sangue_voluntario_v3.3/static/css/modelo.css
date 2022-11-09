@@ -1,0 +1,72 @@
+/** Geral **/
+html{
+    background-color: rgba(47, 185, 185, 0.705);
+    background-image: url("/static/blood.jpg");
+    background-repeat: no-repeat, no-repeat;
+}
+#pause{
+    background-image: url("/static/css/hemocentro.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    padding-left: auto;
+}
+
+/** Corpo **/
+label{
+    display: inline;
+}
+input{
+    display: block;
+}
+a{
+    color: yellow;
+}   
+p{
+    color: white;
+}
+
+/**div's**/
+#principal{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: white;
+    display:block;
+    padding: 1% 0 0 2%;
+}
+#menu{
+    display: inline;
+    border: 1px solid;       
+}
+#cadastro{
+    display: inline;
+}
+
+/**classes**/
+a.titulo{
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: aliceblue; 
+    padding-left: auto;  
+}
+a.subtitulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: aliceblue;
+    padding-left: auto;
+}
+a.acesso{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50%;
+    color: aliceblue;
+    padding-left: auto;
+}
+a.acesso2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: rgb(255, 230, 0);
+    padding-left: auto;
+}
+
+
