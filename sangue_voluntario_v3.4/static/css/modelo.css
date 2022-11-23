@@ -1,0 +1,158 @@
+/** Geral **/
+html{
+    background-color: rgba(47, 185, 185, 0.705);
+    /**background-image: url("/static/blood.jpg");**/
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%;
+}
+#pause{
+    background-image: url("/static/css/hemocentro.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    padding-left: auto;
+}
+
+/** Corpo **/
+label{
+    display: inline;
+}
+input{
+    display: block;
+}
+a{
+    color: yellow;
+}   
+p{
+    color: white;
+}
+
+/**div id começa-se com # **/
+#principal{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    justify-content: center;
+    color: white;
+    padding: 1% 0 0 2%;
+}
+#menu{
+    display: inline;
+    border: 0px solid;       
+}
+#cadastro{
+    display: inline;
+}
+
+/**classes começa-se com . **/
+.container {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background-color: rgb(234, 247, 247);
+    border-color: black;
+    border: 10px solid;
+    border-radius: 40px 40px 40px 40px;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.box1 {
+    transition: .6s ease;
+    opacity: 1;
+    backface-visibility: hidden;
+    width: 32%;
+    height: 58vh;
+    background-image: url(../img_api/img1.png );
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.box1:hover {
+    opacity: 0.48;
+    width: 32%;
+    height: 58vh;
+    background-image: url(../img_api/img1_hover.png );
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.box2 {
+    transition: .4s ease;
+    opacity: 1;
+    backface-visibility: hidden;
+    width: 32%;
+    height: 58vh;
+    background-image: url(../img_api/img2.png );
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.box2:hover {
+    opacity: 0.48;
+    width: 32%;
+    height: 58vh;
+    background-image: url(../img_api/img2_hover.png );
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.box3 {
+    transition: .4s ease;
+    opacity: 1;
+    backface-visibility: hidden;
+    width: 32%;
+    height: 58vh;
+    background-image: url(../img_api/img3.png );
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.box3:hover {
+    opacity: 0.48;
+    width: 32%;
+    height: 58vh;
+    background-image: url(../img_api/img3_hover.png );
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.box img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    z-index: 10;
+}
+a.titulo{
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: aliceblue; 
+    padding-left: auto;  
+}
+a.subtitulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: aliceblue;
+    padding-left: auto;
+}
+a.acesso{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    color: aliceblue;
+    padding-left: auto;
+}
+a.acesso2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: rgb(255, 230, 0);
+    padding-left: auto;
+}
+body {
+    margin: 2px;
+}
+
