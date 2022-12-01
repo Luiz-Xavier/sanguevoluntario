@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/modelo.css"/>
+    <link rel='shortcut icon' type='image/x-icon' href='/static/css/favicon/favicon.ico'/>
+        
+    <title>Primeiro Acesso</title>
+</head>
+
+<!-- Topo da página -->
+<header>
+    <menu id="menu">
+        <a href="#" onclick="contrast()"> Contraste</a>
+        <a href="#" onclick="font_mais()"> Fonte ++</a>
+    </menu>
+</header>
+
+<!-- Corpo da página -->
+<body>
+    <div id="principal">
+        <div class="container">            
+            <div class="box"> 
+                <h1> Primeiro Acesso</h1>
+                <p> Espaço reservado para o cadastro do Doador.</p>
+                <form action="/Cadastro" id=forms method="post">
+                    <!--Senha-->
+                    <div class="cadastro" id="form1" style="display:block">
+                        <label>Senha</label>
+                        <input type="password" name="senha" id="senha" style="width: 75px"/>
+                        <br>
+                        <a href="#form2" onclick="item(2)">Região</a>
+                    </div>
+                    <!--Região-->
+                    <div class="cadastro" id="form2" style="display:none">
+                        <label>Região</label>
+                        <input type="text" name="regiao" id="regiao" style="width: 75px"/>
+                        <br>
+                        <a href="#" onclick="item(3)">Tipo Sanguineo</a>
+                    </div>
+                    <!--Tipo sanguineo-->
+                    <div class="cadastro" id="form3" style="display:none">
+                        <label>Tipo Sanguineo</label>
+                        <input type="text" name="tipoSanguineo" id="tipoSanguineo" style="width: 75px"/>
+                        <br>
+                        <a href="#" onclick="item(4)">Data de Nascimento</a>
+                    </div>
+                    <!--Data de Nascimento-->
+                    <div class="cadastro" id="form4" style="display:none">
+                        <label>Data de Nascimento</label>
+                        <input type="date" name="dataNascimento" id="dataNascimento style="width: 75px"/>
+                        <br>
+                        <a href="#" onclick="item(5)">Genero</a>
+                    </div>
+                    <!--Genero-->
+                    <div class="cadastro" id="form5" style="display:none">
+                        <label>Genero</label>
+                        <input type="text" name="genero" id="genero" style="width: 75px"/>
+                        <br>
+                        <a href="#" onclick="item(6)">Estado Civil</a>
+                    </div>
+                    <!--Estado Civil-->
+                    <div class="cadastro" id="form6" style="display:none">
+                        <label>Estado Civil</label>
+                        <input type="text" name="estadoCivil" id="estadoCivil" style="width: 75px"/>
+                        <br>
+                        <a href="#" onclick="item(7)">Parceiros Sexuais</a>
+                    </div>
+                    <!--Parceiros sexuais-->
+                    <div class="cadastro" id="form7" style="display:none">
+                        <label>Parceiros Sexuais</label>
+                        <input type="number" name="parceirosSexuais" id="parceirosSexuais" style="width: 75px"/>
+                        <br>
+                        <a href="#" onclick="item(8)">Atividades Esportivas </a>
+                    </div>
+                    <!--Atividades Esportivas-->
+                    <div class="cadastro" id="form8" style="display:none">
+                        <label>Atividades Esportivas</label>
+                        <select id="atividadeEsportiva" name="atividadeEsportiva">
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>                    
+                        <br>
+                        <a href="#" onclick="item(9)">Horas de Sono</a>
+                    </div>
+                    <!--Horas de Sono-->
+                    <div class="cadastro" id="form9" style="display:none">
+                        <label>Qualidade do Sono</label>
+                        <select id="horasSono" name="horasSono" >
+                            <option value="Boa">Boa</option>
+                            <option value="Ruim">Ruim</option>
+                        </select>
+                        <br>
+                        <a href="#" onclick="item(10)">Quantidade de Refeições</a>
+                    </div>
+                    <!--Quantidade de Refeições-->
+                    <div class="cadastro" id="form10" style="display:none">
+                        <label>Quantidade de Refeições</label>
+                        <input type="number" name="qtdeRefeicoes" id="qtdeRefeicoes" style="width: 75px"/>
+                        <br>
+                        <a href="#" onclick="item(11)">Ingestão Açucares</a>
+                    </div>
+                    <!--Ingestão Açucares-->
+                    <div class="cadastro" id="form11" style="display:none">
+                        <label>Consumo excessivo de Açucares</label>
+                        <select id="ingestaoAcucares" name="ingestaoAcucares" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <br>
+                        <a href="#" onclick="item(12)">Ingestão Gordura</a>
+                    </div>
+                    <!--Ingestão Gordura-->
+                    <div class="cadastro" id="form12" style="display:none">
+                        <label>Consumo excessivo  de Gordura</label>
+                        <select id="ingestaoGordura" name="ingestaoGordura" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <br>
+                        <a href="#" onclick="item(13)">Ingestão Bebidas</a>
+                    </div>
+                    <!--Ingestão Bebidas-->
+                    <div class="cadastro" id="form13" style="display:none">
+                        <label>Consumo excessivo de Bebidas Alcoólicas</label>
+                        <select id="ingestaoBebidas" name="ingestaoBebidas" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <br>
+                        <a href="#" onclick="item(14)">drogas</a>
+                    </div>
+                    <!--drogas-->
+                    <div class="cadastro" id="form14" style="display:none">
+                        <label>Contato com Drogas </label>
+                        <select id="drogas" name="drogas" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <br>
+                        <a href="#" onclick="item(15)">Cirurgias</a>
+                    </div>
+                    <!--Cirugias-->
+                    <div class="cadastro" id="form15" style="display:none">
+                        <label>Fez Cirugia recentemente</label>
+                        <select id="cirurgias" name="cirurgias" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <br>
+                        <a href="#" onclick="item(16)">Anestesia</a>
+                    </div>
+                    <!--Anestesia-->
+                    <div class="cadastro" id="form16" style="display:none">
+                        <label>Procedimento com uso de Anestesia</label>
+                        <select id="anestesia" name="anestesia" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <a href="#" onclick="item(17)">Acumpuntura</a>
+                    </div>
+                    <!--Acumpuntura-->
+                    <div class="cadastro" id="form17" style="display:none">
+                        <label>Já praticou terapia com agulhas.</label>
+                        <select id="acumpuntura" name="acumpuntura" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <a href="#" onclick="item(18)">Amazônia</a>
+                    </div>
+                    <!--Amazônia-->
+                    <div class="cadastro" id="form18" style="display:none">
+                        <label>Viajou recentemente para Região Amazônica</label>
+                        <select id="amazonia" name="amazonia" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <a href="#" onclick="item(19)">Estados Unidos</a>
+                    </div>
+                    <!--Estados Unidos-->
+                    <div class="cadastro" id="form19" style="display:none">
+                        <label>Viajou recentemente para os EUA</label>
+                        <select id="eua" name="eua" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <a href="#" onclick="item(20)">eua</a>
+                    </div>
+                    <!--Vacinas-->
+                    <div class="cadastro" id="form20" style="display:none">
+                        <label>Vacinas em atraso</label>
+                        <select id="vacinas" name="vacinas" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <a href="#" onclick="item(21)">Malária</a>
+                    </div>
+                    <!--Malária-->
+                    <div class="cadastro" id="form21" style="display:none">
+                        <label>Contraiu Malária</label>
+                        <select id="malaria" name="malaria" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <a href="#" onclick="item(22)">Chicungunha</a>
+                    </div>
+                    <!--Chicungunha-->
+                    <div class="cadastro" id="form22" style="display:none">
+                        <label>Contraiu Cicungunha</label>
+                        <select id="chicungunha" name="chicungunha" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <a href="#" onclick="item(23)">hivAids</a>
+                    </div>
+                    <!--Hiv Aids-->
+                    <div class="cadastro" id="form23" style="display:none">
+                        <label>Contraiu HIV</label>
+                        <select id="hivAids" name="hivAids" >
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <a href="#" onclick="item(24)">Parkinson</a>
+                    </div>
+                    <!--Malária-->
+                    <div class="cadastro" id="form21" style="display:none">
+                        <label>Contraiu Parkinson</label>
+                        <select id="parkinson" name="parkinson">
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <a href="#" onclick="item(22)">Chicungunha</a>
+                    </div>
+                    <!-- Enviar-->
+                    <div class="cadastro" id="form4" style="display:none">
+                        <button type="submit" onclick="newDoador()">Enviar</button>
+                        <input type="reset" value="Redefinir">  
+                    </div>             
+                </form>
+            </div> 
+        </div>
+    </div>       
+    <script src="/script/"></script>
+    <br>
+    <footer>
+    <a href="/views/home.html"> Meu Histórico</a>
+
+    </footer>
+    
+</body>
+</html>
